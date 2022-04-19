@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Intial Task 1</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./style.css"></link>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>GLOBAL NETWORK PORTAL</h1>
+            <div class="header-right">
+                <i class="fa fa-phone" style="font-size:large;"></i><h2 style="margin-top:-1px"> On Call</h2>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa fa-bars" style="font-size: xx-large;padding-bottom: 40px;"></i>
+            <i class="fa fa-cloud" style="font-size: xx-large;padding-bottom: 40px;"></i>
+            <i class="fa fa-heart" style="font-size: xx-large;padding-bottom: 40px;"></i>
+            <i class="fa fa-car" style="font-size: xx-large;padding-bottom: 40px;"></i>
+            <i class="fa fa-file" style="font-size: xx-large;padding-bottom: 40px;"></i>
+            <i class="fa fa-plus" style="font-size: xx-large;" id="plus" onclick="modal_display()"></i>    
+        </div>
+        <div class="inner" style="display: flex;align-items: flex-start;">
+            <div class="heading">
+                <h2>Dashboard</h2>
+            </div>
+            <div>     
+                <div class="flex-container" id="cards">
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>  
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <label for="fname">Title</label><br>
+            <input type="text" id="titleget"><br>
+            <label for="lname">Name</label><br>
+            <input type="text" id="nameget"><br>
+            <label for="fname">Description</label><br>
+            <input type="text" id="descget"><br>
+            <label for="fname">Image Needed</label><br>
+            <select id="img_check" name="cars">
+                <option value="false">No</option>
+                <option value="true" onclick="f_data()">Yes</option>
+            </select><br>
+            <div id="f_img" style="display:none">
+                <label for="fname">IMAGE URL</label><br>
+                <input type="text" id="imageurlget"><br>
+            </div>
+            <label for="fname">Chart Needed</label><br>
+            <select id="chart_check" name="cars">
+                <option value="false">No</option>
+                <option value="true" onclick="f_data()">Yes</option>
+            </select><br>
+           <div id="f_chart" style="display: none;">
+            <label for="fname">CHART URL</label><br>
+            <input type="text" id="charturlget"><br>
+            </div>
+            <button onclick="submittest()">Submit</button>  
+        </div>
+      </div> 
+
+      <footer>
+          <div class="footer-content">
+          <img src="./assets/images/footer.png" class="img-footer"/>
+          <p >
+            &copy; Copyright - The Walt Disney Studios - Studio Technology - Motion Picture Innovation
+          </p>
+          </div>
+      </footer>
+    <!-- <script src="data/data.js"></script> -->
+    <script src="./script.js" ></script>
+    <!-- <script src="./functions/functions.js" type="module"></script> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="./chart1.js"></script>
+    <script src="./chart2.js"></script>
+    <script src="./chart3.js"></script>
+</body>
+</head>
+</html>
